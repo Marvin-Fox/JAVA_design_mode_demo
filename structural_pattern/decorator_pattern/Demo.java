@@ -20,13 +20,13 @@ public class Demo {
         System.out.println("\n==================画圆形：装饰了红色边框【装饰器模式】==================");
         Circle circle = new Circle();
         System.out.println(String.format("main方法创建 new Circle() 圆形对象【对象信息：%s】", circle));
-        ShapeDecorator redCircle = new RedBorderDecorator(circle);
-        redCircle.draw();
+        ShapeDecorator circleDecorator = new RedBorderDecorator(circle);
+        circleDecorator.draw();
 
         System.out.println("\n==================画矩形：装饰了红色边框 and 蓝色背景【装饰器模式】==================");
         Rectangle rectangle = new Rectangle();
         System.out.println(String.format("main方法创建 new Rectangle() 矩形对象【对象信息：%s】", rectangle));
-        ShapeDecorator redRectangle = new RedBorderDecorator(new BlueBackdropDecorator(rectangle));
-        redRectangle.draw();
+        ShapeDecorator rectangleDecorator = new RedBorderDecorator(new BlueBackdropDecorator(rectangle));
+        rectangleDecorator.draw();
     }
 }
