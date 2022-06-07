@@ -14,9 +14,12 @@ public class Adapter implements HongKongPanel {
         this.chinaMainlandPanel = chinaMainlandPanel;
     }
 
+    /**
+     * 适配器重写的这个方法，目的是进行转换
+     */
     @Override
     public void offerHongKongElectricity() {
+        System.out.println("适配器开始转换功能");
         chinaMainlandPanel.offerChinaMainlandElectricity();
     }
-
 }

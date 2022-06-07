@@ -6,5 +6,5 @@ package adapter_pattern;
  */
 public interface ChinaMainlandPanel {
 
-    public void offerChinaMainlandElectricity();
+    void offerChinaMainlandElectricity();
 }

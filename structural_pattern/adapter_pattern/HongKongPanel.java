@@ -6,6 +6,6 @@ package adapter_pattern;
  */
 public interface HongKongPanel {
 
-    public void offerHongKongElectricity();
+    void offerHongKongElectricity();
 
 }

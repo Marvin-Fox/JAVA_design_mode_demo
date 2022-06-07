@@ -11,6 +11,7 @@ public class ClientHongKongSocket {
      * @param hongKongPanel
      */
     public void plugIn(HongKongPanel hongKongPanel) {
+        System.out.println("港版插头 插入");
         hongKongPanel.offerHongKongElectricity();
     }
 }
