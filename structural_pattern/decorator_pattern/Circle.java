@@ -6,7 +6,6 @@ package decorator_pattern;
 public class Circle implements Shape {
     @Override
     public void draw() {
-        System.out.println("circle 绘图对象信息：" + this);
-        System.out.println("Shape: Circle");
+        System.out.println(String.format("Circle类-》draw()圆形绘图开始【对象信息：%s】", this));
     }
 }

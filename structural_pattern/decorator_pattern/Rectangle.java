@@ -6,7 +6,6 @@ package decorator_pattern;
 public class Rectangle implements Shape {
     @Override
     public void draw() {
-        System.out.println("rectangle 绘图对象信息：" + this);
-        System.out.println("Shape: Rectangle");
+        System.out.println(String.format("Rectangle类-》draw()矩形绘图开始【对象信息：%s】", this));
     }
 }
