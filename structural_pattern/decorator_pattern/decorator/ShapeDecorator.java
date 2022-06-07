@@ -1,7 +1,9 @@
-package decorator_pattern;
+package decorator_pattern.decorator;
+
+import decorator_pattern.Shape;
 
 /**
- * 图形装饰器抽象类
+ * 图形装饰器抽象类【基类】
  */
 public abstract class ShapeDecorator implements Shape {
 
@@ -16,7 +18,7 @@ public abstract class ShapeDecorator implements Shape {
      */
     @Override
     public void draw() {
-        System.out.println(String.format("图形装饰器抽象类:draw()【对象信息：%s】", decoratedShape));
+        System.out.println(String.format("图形装饰器抽象类【基类】:draw()【对象信息：%s】", decoratedShape));
         decoratedShape.draw();
     }
 }
